@@ -25,6 +25,7 @@ test.only('api post test', async ({ request }) => {
     )
 
     expect(response.status()).toBe(200)
+    
 
     const responseBody = await response.json();
 
