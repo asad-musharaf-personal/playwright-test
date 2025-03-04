@@ -13,7 +13,7 @@ test('api get test', async ({ request }) => {
 
 });
 
-test.only('api post test', async ({ request }) => {
+test('api post test', async ({ request }) => {
 
     const response = await request.post('https://reqres.in/api/register', {
 
@@ -25,7 +25,7 @@ test.only('api post test', async ({ request }) => {
     )
 
     expect(response.status()).toBe(200)
-    
+
 
     const responseBody = await response.json();
 
